@@ -193,6 +193,19 @@ h6,
     background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
+/* doctor pic style */
+.clip-doctor {
+  width: 120%;
+  height:90vh;
+  object-fit: cover;
+  transition: transform 0.4s ease, clip-path 0.4s ease;
+}
+
+.clip-doctor:hover {
+  transform: scale(0.95); /* Effet subtil au survol */
+}
+
+
 
 .bg-appointment {
     background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
