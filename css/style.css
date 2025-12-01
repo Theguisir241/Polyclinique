@@ -124,6 +124,28 @@ h6,
         padding: 10px 0;
     }
 }
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: center;       /* centre verticalement les éléments */
+        justify-content: space-between; /* logo à gauche, menu à droite */
+        padding: 0 10px;           /* petit padding horizontal */
+    }
+
+    .navbar-brand {
+        width: 50px;               /* taille adaptée pour mobile */
+        height: 50px;
+        display: flex;
+        align-items: center;       /* centre verticalement le logo */
+        justify-content: flex-start; /* reste à gauche */
+        padding: 0;
+    }
+
+    .navbar-brand img {
+        width: 100%;               /* le logo s’adapte à la taille du container */
+        height: auto;
+    }
+}
 
 .carousel-caption {
     top: 0;
@@ -195,8 +217,8 @@ h6,
 }
 /* doctor pic style */
 .clip-doctor {
-  width: 120%;
-  height:90vh;
+  width: 100%;
+  height:100%;
   object-fit: cover;
   transition: transform 0.4s ease, clip-path 0.4s ease;
 }
